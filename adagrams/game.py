@@ -57,13 +57,15 @@ def draw_letters():
 
 
 def uses_available_letters(word, letter_bank):
-    
-    word = word.upper()
-    
-    for char in word:
-        if char not in letter_bank or word.count(char) > letter_bank.count(char):
-            return False
-    return True   
+    try: 
+        word = word.upper()
+        
+        for char in word:
+            if char not in letter_bank or word.count(char) > letter_bank.count(char):
+                return False
+        return True 
+    except ValueError:
+        print(f"please enter alphabets")
 
 def score_word(word):
     pass
