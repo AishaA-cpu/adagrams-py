@@ -65,7 +65,7 @@ def uses_available_letters(word, letter_bank):
                 return False
         return True 
     except ValueError:
-        print(f"please enter alphabets")
+        print("please enter alphabets")
 
 def score_word(word):
     pass
