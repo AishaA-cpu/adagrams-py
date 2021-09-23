@@ -58,7 +58,8 @@ def draw_letters():
 
 def uses_available_letters(word, letter_bank):
     try: 
-        word = word.upper()
+        if not word.isupper():
+            word = word.upper()
         
         for char in word:
             if char not in letter_bank or word.count(char) > letter_bank.count(char):
