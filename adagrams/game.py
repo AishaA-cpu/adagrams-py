@@ -91,7 +91,7 @@ def score_word(word):
     #     ("J","X") : 8,
     #     ("Q", "Z") : 10
 
-    #}
+    # }
 
     score_chart = {"A": 1, 
         "E" : 1,
